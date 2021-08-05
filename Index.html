@@ -1,0 +1,182 @@
+<!--
+  1-d-flex: Aligns the div horizontally.
+  
+  2-justify-content-evenly: divides the space evenly between the children of div.
+  
+  3-container: Sets a maximum width to a div layer and centers the div layer.
+  
+  4-navbar: will apply spacing for the nav element
+
+  5-navbar- dark: will apply the predetermined dark color to the element.
+  
+  6-margain(ml, mr, mt, mb)-number: creates a margain to the direction specified with a max of 5.
+
+
+
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link href="./CSS.css" rel="stylesheet" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <!--This is the NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
+
+          <li class="nav-item">
+            <a class="nav-link active me-4" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-4" aria-current="page" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-4" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-4" aria-current="page" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--This is the Carousel-->
+  
+  <div class="mb-2 container-fluid ms-0" id="home">
+    <img src="./Carousel2.jpg" alt="This is the Carousel." width=100%; style="height: 97vh;" />
+  </div>
+
+
+  <hr class="mt-0">
+
+  <!--This is the Porfolio-->
+  <span class="mb-0" id="portfolio"></span>
+  <div class="justify-content-center container-fluid" style="margin-bottom: 9rem;">
+    <div class="d-flex container justify-content-evenly" style="margin-bottom: 9rem; margin-top: 5rem;">
+      <h1 style="text-decoration: underline; color: black; text-decoration-color:#0d6efd;">Portfolio</h1>
+    </div>
+
+    <!--The cards Group-->
+    <div class="d-flex justify-content-evenly container">
+      <!--First Card-->
+      <div class="card" style="width: 18rem;">
+        <img src="./Card 1.jpg" class="card-img-top" alt="A card for Experience" width=120px height=160px>
+        <div class="card-body">
+          <h5 class="card-title">Education.</h5>
+          <p class="card-text">More about my Education.</p>
+          <a href="#" class="btn btn-primary">Go to Education</a>
+        </div>
+      </div>
+
+
+      <!--Second card-->
+      <div class="card" style="width: 18rem;">
+        <img src="./Card 2.jpg" class="card-img-top" alt="A card for Projects" width=120px height=160px>
+        <div class="card-body">
+          <h5 class="card-title">Projects.</h5>
+          <p class="card-text">My Projects.</p>
+          <a href="#" class="btn btn-primary">Go to Projects</a>
+        </div>
+      </div>
+
+
+
+      <!--Third card-->
+      <div class="card" style="width: 18rem;">
+        <img src="./card 3.jpg" class="card-img-top" alt="A card for Skills" width=120px height=160px>
+        <div class="card-body">
+          <h5 class="card-title">Skills.</h5>
+          <p class="card-text">The skills and interests I have.</p>
+          <a href="#" class="btn btn-primary">Go to Skills chart.</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <hr class="mt-0">
+
+
+
+
+  <!--This is the About Section-->
+  <span id="about"></span>
+  <div class="container" style="position: relative; text-align: center; margin-top: 4rem;">
+    <div class="d-flex container justify-content-evenly">
+      <h1 style="text-decoration: underline; color: black; text-decoration-color:#0d6efd; margin-top: 1rem;">About</h1>
+    </div>
+    <img src="about.jpg" class=" ms-5" width=90% style="height: 70vh; z-index: 0; opacity:0.3" />
+    <div style="z-index: 10; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <h3>I am a Computer Engineering student who is currently studying. There is no further information since this is
+        just training.</h3>
+    </div>
+
+
+
+  </div>
+  <hr style="margin-top: 5rem;  ">
+
+  <span id="contact"></span>
+  <div class="container-fluid">
+    <div class="d-flex container justify-content-evenly" style="margin-bottom: 8rem; margin-top: 5rem;">
+      <h1 style="text-decoration: underline; color: black; text-decoration-color:#0d6efd;">Contact</h1>
+    </div>
+    <div class="card container-fluid" style="width: 50rem;">
+      <form class="" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mbjqzdle" method="post">
+        <div class=" container d-flex justify-content-center flex-column" > 
+          <fieldset  id=" row fs-frm-inputs" style ="right: 50%;">
+            <input class="col-8 mt-2" type="text" name="name" id="full-name" placeholder="Full Name" required="" style ="margin-left: 100px;">
+
+            <input class="col-8 mt-2" type="email" name="_replyto" id="email-address" placeholder="Email" required=""  style ="margin-left: 100px;">
+
+            <textarea class="col-8 mt-2" rows="5" name="message" id="message" placeholder="The message."  style ="margin-left: 100px;"
+              required=""></textarea>
+          </fieldset>
+          <input class="col-2 mt-2" type="submit" value="Submit" style ="margin-left: 100px;">
+        </div>
+      </form>
+      </div>
+      <div style='margin:200px'></div>
+    </div>
+
+
+
+
+  </div>
+
+</body>
+
+
+
+
+
+</html>
